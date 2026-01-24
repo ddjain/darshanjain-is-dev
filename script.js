@@ -384,6 +384,48 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Dynamic duration calculation for Red Hat experience
+function updateRedHatDuration() {
+    const durationElement = document.getElementById('redhat-duration');
+    if (!durationElement) return;
+
+    const startDate = new Date(durationElement.getAttribute('data-start-date'));
+    const currentDate = new Date();
+
+    // Calculate the difference in months
+    let years = currentDate.getFullYear() - startDate.getFullYear();
+    let months = currentDate.getMonth() - startDate.getMonth();
+
+    // Adjust if current month/day is before start month/day
+    if (months < 0) {
+        years--;
+        months += 12;
+    }
+
+    // Format the duration string
+    let durationText = 'January 2026 - Present';
+
+    if (years > 0 && months > 0) {
+        durationText += ` · ${years} yr${years > 1 ? 's' : ''} ${months} mo${months > 1 ? 's' : ''}`;
+    } else if (years > 0) {
+        durationText += ` · ${years} yr${years > 1 ? 's' : ''}`;
+    } else if (months > 0) {
+        durationText += ` · ${months} mo${months > 1 ? 's' : ''}`;
+    } else {
+        // Less than a month
+        durationText += ' · 1 mo';
+    }
+
+    durationElement.textContent = durationText;
+}
+
+// Update duration on page load and every day
+document.addEventListener('DOMContentLoaded', () => {
+    updateRedHatDuration();
+    // Update once per day (86400000 milliseconds)
+    setInterval(updateRedHatDuration, 86400000);
+});
+
 // Console welcome message
 console.log('%c🚀 Welcome to Darshan Jain\'s Portfolio!', 'color: #00d4ff; font-size: 20px; font-weight: bold;');
 console.log('%cBuilt with ❤️ using modern web technologies', 'color: #ccc; font-size: 14px;');
