@@ -1,0 +1,31 @@
+{
+  "name": "darshan-jain-portfolio",
+  "version": "1.0.0",
+  "description": "Darshan Jain's professional portfolio website showcasing skills, experience, and projects",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000",
+    "serve": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "engineer",
+    "java",
+    "spring-boot",
+    "python",
+    "aws",
+    "kubernetes",
+    "microservices"
+  ],
+  "author": "Darshan Jain",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ddjain/darshan-portfolio.git"
+  },
+  "homepage": "https://ddjain.github.io/darshan-portfolio",
+  "devDependencies": {},
+  "dependencies": {}
+}
