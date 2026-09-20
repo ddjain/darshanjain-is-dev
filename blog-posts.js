@@ -4,6 +4,25 @@
  * For full post pages, create HTML files in writing/ and set url to the path (e.g. 'writing/my-post.html').
  */
 window.BLOG_POSTS = [
-    // Add entries when you have real posts, e.g.:
-    // { title: 'Post title', url: 'writing/my-post.html', date: '2025-01-15', excerpt: 'Short summary.' },
+    {
+        title: 'Krkn at KubeCon — chaos engineering is no longer an experiment',
+        url: 'https://www.linkedin.com/feed/update/urn:li:activity:7473441622920208385/',
+        external: true,
+        image: 'assets/kubecon-krkn.jpg',
+        excerpt: 'Day 1 at KubeCon representing Krkn — startups, enterprises, Kubernetes vendors, and the OSS community kept stopping by to talk resilience. Teams aren\u2019t treating chaos as an experiment anymore; they\u2019re actively validating failure scenarios and building confidence in their platforms.',
+    },
+    {
+        title: 'Café Cursor — free credits, coffee & conversations',
+        url: 'https://www.linkedin.com/feed/update/urn:li:activity:7499417333891756032/',
+        external: true,
+        image: 'assets/cafe-cursor.jpg',
+        excerpt: 'Met a bunch of crazy builders at Café Cursor — never thought Pune had a crowd like this. Everyone is building something: one guy shipped a simple screenshot app that got super popular, another landed YC funding, and they\u2019re all still in college.',
+    },
+    {
+        title: 'OpenCode × Codex in Pune — what an aesthetic villa',
+        url: 'https://x.com/i_darshanjain/status/2096200435514413492',
+        external: true,
+        image: 'assets/opencode-pune.jpg',
+        excerpt: 'Attended the OpenCode Codex event in Pune — what an aesthetic villa. Crazy developers constantly experimenting and building. Pune\u2019s got a real vibe now.',
+    },
 ];
