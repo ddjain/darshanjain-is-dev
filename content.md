@@ -82,6 +82,8 @@ https://github.com/ddjain/aws-pipeline-cli
 
 AngularJS directive for controlling rapid click events and avoiding repeated expensive browser work.
 
+18,059 npm downloads in the latest 18-month reporting window (retrieved September 20, 2026).
+
 https://www.npmjs.com/package/ngdebounceclick
 
 ## Core Capabilities

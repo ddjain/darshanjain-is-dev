@@ -12,7 +12,7 @@
     --font-display: 'Newsreader', Georgia, serif;
     --font-body: 'IBM Plex Sans', Arial, sans-serif;
     --font-mono: 'IBM Plex Mono', monospace;
-    --shell: 1180px;
+    --shell: 1240px;
     --gutter: clamp(20px, 4vw, 56px);
     --header-height: 72px;
     --ease: cubic-bezier(.22, 1, .36, 1);
@@ -236,6 +236,17 @@ select {
     transform: translateY(-2px);
 }
 
+.button-quiet {
+    color: var(--ink);
+    background: transparent;
+}
+
+.button-quiet:hover {
+    color: var(--white);
+    background: var(--ink);
+    border-color: var(--ink);
+}
+
 .button:active {
     transform: translateY(0);
 }
@@ -272,6 +283,7 @@ select {
     padding-top: clamp(72px, 10vw, 132px);
     border-bottom: 1px solid var(--line);
     background:
+        radial-gradient(circle at 78% 18%, rgba(196, 61, 37, .1), transparent 24rem),
         linear-gradient(90deg, transparent calc(50% - .5px), rgba(189, 183, 170, .28) 50%, transparent calc(50% + .5px)),
         var(--paper);
 }
@@ -315,7 +327,7 @@ select {
     max-width: 12ch;
     margin: 0;
     font-family: var(--font-display);
-    font-size: clamp(3.7rem, 8.7vw, 7.7rem);
+    font-size: clamp(3.7rem, 8.2vw, 7.25rem);
     font-weight: 500;
     line-height: .88;
     letter-spacing: -.055em;
@@ -390,6 +402,14 @@ select {
     justify-content: space-between;
     padding: 24px clamp(14px, 2.5vw, 30px) 28px;
     border-right: 1px solid var(--line);
+}
+
+.proof-item strong::before {
+    content: '↗ ';
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: .45em;
+    vertical-align: .35em;
 }
 
 .proof-item:first-child {
@@ -693,6 +713,19 @@ select {
     max-width: 55ch;
     margin: 20px 0 28px;
     color: var(--ink-soft);
+}
+
+.project-card p strong {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.project-footnote {
+    margin: 20px 0 0;
+    color: var(--ink-faint);
+    font-family: var(--font-mono);
+    font-size: .7rem;
+    letter-spacing: .02em;
 }
 
 .project-card:hover p {
@@ -1421,6 +1454,20 @@ select {
         font-size: clamp(3.3rem, 16vw, 5rem);
     }
 
+    .hero-actions {
+        align-items: stretch;
+        flex-direction: column;
+        max-width: 20rem;
+    }
+
+    .hero-actions .button {
+        justify-content: center;
+    }
+
+    .hero-actions .text-link {
+        align-self: flex-start;
+    }
+
     .hero-profile {
         display: grid;
         grid-template-columns: minmax(150px, .65fr) minmax(0, 1fr);
@@ -1524,7 +1571,8 @@ select {
     }
 
     .note-excerpt {
-        display: none;
+        display: block;
+        font-size: .82rem;
     }
 
     .capability-grid {

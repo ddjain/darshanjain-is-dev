@@ -41,6 +41,19 @@ if (menuToggle && navPanel) {
         if (event.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') {
             setMenu(false, true);
         }
+
+        if (event.key === 'Tab' && menuToggle.getAttribute('aria-expanded') === 'true') {
+            const focusable = [...navPanel.querySelectorAll('a, button')];
+            const first = focusable[0];
+            const last = focusable[focusable.length - 1];
+            if (event.shiftKey && document.activeElement === first) {
+                event.preventDefault();
+                last.focus();
+            } else if (!event.shiftKey && document.activeElement === last) {
+                event.preventDefault();
+                first.focus();
+            }
+        }
     });
 
     window.addEventListener('resize', () => {
