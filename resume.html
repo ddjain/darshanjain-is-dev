@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Résumé of Darshan Jain, Senior Software Engineer at Red Hat.">
+    <meta name="theme-color" content="#f3f0e8">
+    <title>Résumé — Darshan Jain</title>
+    <link rel="canonical" href="https://darshanjain.is-a.dev/resume.html">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=Newsreader:opsz,wght@6..72,500;6..72,600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="resume-page">
+    <header class="resume-toolbar" aria-label="Résumé actions">
+        <a href="index.html">← Portfolio</a>
+        <button type="button" id="print-resume">Print / save PDF</button>
+    </header>
+
+    <main class="resume-sheet">
+        <header class="resume-header">
+            <div>
+                <p class="section-number">Senior Software Engineer</p>
+                <h1>Darshan Jain</h1>
+                <p class="resume-summary">Backend and infrastructure engineer with 8+ years of experience building resilient platforms, high-throughput services, and cloud-native systems. Maintainer of Krkn at Red Hat with hands-on ownership across architecture, delivery, open source, and technical mentorship.</p>
+            </div>
+            <address class="resume-contact">
+                <span>Pune, India · Open to relocation</span>
+                <a href="mailto:nnd.darshan@gmail.com">nnd.darshan@gmail.com</a>
+                <a href="https://www.linkedin.com/in/ddjain">linkedin.com/in/ddjain</a>
+                <a href="https://github.com/ddjain">github.com/ddjain</a>
+            </address>
+        </header>
+
+        <section class="resume-section" aria-labelledby="resume-experience">
+            <h2 id="resume-experience">Experience</h2>
+            <article class="resume-role">
+                <div class="resume-role-heading">
+                    <div><h3>Senior Software Engineer</h3><p>Red Hat · Performance &amp; Scale</p></div>
+                    <span><time datetime="2026-01">Jan 2026</time> — Present</span>
+                </div>
+                <ul>
+                    <li>Maintain Krkn, a CNCF open-source chaos engineering framework for Kubernetes and OpenShift, contributing to roadmap, architecture, features, releases, reviews, and community growth.</li>
+                    <li>Own resilience validation for cross-cluster live migration, establishing reliability benchmarks, scalability guidance, and operational practices for OpenShift Virtualization.</li>
+                    <li>Designed Storage I/O throttling chaos across cgroup v1/v2 environments and shipped supporting krkn-lib, documentation, and krkn-hub changes.</li>
+                    <li>Modernized CI validation with isolated pytest suites, introduced event-driven scenario triggers, and improved SLO evaluation by parallelizing PromQL work.</li>
+                    <li>Mentor an LFX contributor building automated documentation tooling for the Krkn ecosystem; <a href="https://www.linkedin.com/feed/update/urn:li:activity:7429484896038887424/">presented Krkn at DevConf Pune 2026</a>.</li>
+                </ul>
+            </article>
+
+            <article class="resume-role">
+                <div class="resume-role-heading">
+                    <div><h3>Senior Lead Software Engineer</h3><p>HeapTrace Technology</p></div>
+                    <span><time datetime="2018-10">Oct 2018</time> — <time datetime="2025-12">Dec 2025</time></span>
+                </div>
+                <ul>
+                    <li>Architected multi-tenant Spring Boot services and Falcon ingestion APIs processing more than 10,000 events per minute.</li>
+                    <li>Designed fault-tolerant AWS SQS pipelines for patient-vitals ingestion and HIPAA-compliant systems using OAuth2, Keycloak, Lambda, Lex, and Twilio.</li>
+                    <li>Reduced annual AWS spend by approximately $40,000, cut migrated job costs by 75%, and improved execution speed by 5x.</li>
+                    <li>Implemented blue-green deployments across 15+ ECS microservices and a layered test strategy that reached 85% coverage and reduced post-release bugs by 90%.</li>
+                    <li>Mentored four-plus engineers through architecture, delivery, code reviews, and technical onboarding.</li>
+                </ul>
+            </article>
+
+            <article class="resume-role resume-role-short">
+                <div class="resume-role-heading">
+                    <div><h3>Associate Software Developer</h3><p>Bentley Systems</p></div>
+                    <span><time datetime="2018-04">Apr 2018</time> — <time datetime="2018-08">Aug 2018</time></span>
+                </div>
+                <p>Built account-recovery and role-based access features using C#, MVC 5, and Kendo UI.</p>
+            </article>
+        </section>
+
+        <section class="resume-section resume-columns" aria-label="Skills and projects">
+            <div>
+                <h2>Capabilities</h2>
+                <dl class="resume-skills">
+                    <div><dt>Languages</dt><dd>Python, Java, Bash, C#</dd></div>
+                    <div><dt>Backend</dt><dd>Spring Boot, REST APIs, Redis, messaging, distributed systems</dd></div>
+                    <div><dt>Platform</dt><dd>Kubernetes, OpenShift, AWS, Docker, Terraform, Argo CD</dd></div>
+                    <div><dt>Observability</dt><dd>Prometheus, Grafana, Loki, SLO validation</dd></div>
+                    <div><dt>Security</dt><dd>OAuth2, Keycloak, HIPAA, SOC 2, PHI controls</dd></div>
+                </dl>
+            </div>
+            <div>
+                <h2>Selected Projects</h2>
+                <ul class="resume-projects">
+                    <li><a href="https://github.com/krkn-chaos/krkn"><strong>Krkn</strong></a><span>Chaos engineering for Kubernetes and OpenShift</span></li>
+                    <li><a href="https://github.com/ddjain/kubernetics-mcp-server"><strong>Kubernetes MCP Server</strong></a><span>Natural-language cluster inspection and management</span></li>
+                    <li><a href="https://github.com/ddjain/aws-pipeline-cli"><strong>AWS CodePipeline CLI</strong></a><span>Multi-profile pipeline discovery and execution</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="resume-section resume-education" aria-labelledby="resume-education">
+            <h2 id="resume-education">Education</h2>
+            <p><strong>PG-DAC</strong> · CDAC IACSD Akurdi, Pune · 2017–2018</p>
+            <p><strong>B.E., Computer Science</strong> · MGM College of Engineering, Nanded · 2013–2017</p>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('print-resume').addEventListener('click', function () { window.print(); });
+    </script>
+</body>
+</html>

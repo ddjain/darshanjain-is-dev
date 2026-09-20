@@ -1,177 +1,101 @@
-# Darshan Jain - Senior Software Engineer at Red Hat
+# Darshan Jain — Portfolio Content Source
 
-> Senior Software Engineer at Red Hat, Performance & Scale team. 7+ years building backend systems with Python, Java, Spring Boot, and Kubernetes.
+Use this file as the concise factual reference for public portfolio and résumé updates. The rendered site remains `index.html`.
 
-**Website:** https://ddjain.github.io/darshan-portfolio/
+## Positioning
 
----
+**Role:** Senior Software Engineer at Red Hat, Performance & Scale
 
-## Hero
+**Focus:** Backend systems, platform reliability, infrastructure, and open source
 
-**Name:** Darshan Jain
+**Location:** Pune, India; open to relocation
+**Primary statement:** I build systems that stay useful when things go wrong.
 
-**Rotating Roles:**
-- Senior Software Engineer at Red Hat
-- Performance & Scale
-- Python | Kubernetes | Java
+## Summary
 
-**Description:** Senior Software Engineer at Red Hat, Performance & Scale team. 7+ years building backend systems with Python, Java, Spring Boot, and Kubernetes.
+Backend and infrastructure engineer with 8+ years of experience building resilient platforms, high-throughput services, and cloud-native systems. Maintainer of Krkn at Red Hat with hands-on ownership across architecture, delivery, open source, and mentorship.
 
-**Tech Stack Icons:** Java 17, Spring Boot 3, Python, AWS, Kubernetes, Docker
+## Verified Outcomes
 
----
+| Outcome | Evidence |
+| --- | --- |
+| 10,000+ events/minute | Falcon ingestion APIs at HeapTrace |
+| Approximately $40,000/year saved | AWS Reserved Instance optimization |
+| 75% lower cost and 5x faster execution | Migration of infrequent jobs to Lambda |
+| 85% test coverage and 90% fewer bugs | Layered unit, API, and UI test strategy |
+| 15+ services | Blue-green deployment implementation across ECS microservices |
+| 4+ engineers | Technical mentorship and onboarding |
 
-## Professional Summary
-
-### Backend Development
-7+ years building backend services with Java, Spring Boot, and Python. Designed RESTful APIs, multi-tenant systems, and high-throughput ingestion pipelines.
-
-### Cloud & DevOps
-Proficient in deploying cloud-native applications on AWS and Kubernetes. Experienced in CI/CD, infrastructure as code, and observability. Led AWS Partner Network accreditation.
-
-### Security & Compliance
-Implemented HIPAA-compliant systems, SOC2 audit remediation, and OAuth2/Keycloak authentication at HeapTrace.
-
-### Leadership & Mentoring
-Mentored 4+ junior developers on Spring Boot, CI/CD, and code quality. Led code reviews and technical onboarding.
-
----
-
-## Key Achievements
-
-| Metric | Value |
-|--------|-------|
-| Years Experience | 7+ |
-| K/yr saved on AWS | 40 |
-| K+ events/min (Falcon API) | 10 |
-| Test Coverage % | 85 |
-
----
-
-## Skills & Expertise
-
-### Programming & Frameworks
-- Java 17
-- Spring Boot 3
-- Python
-- Redis
-
-### Cloud & Infrastructure
-- AWS (EC2, ECS, EKS)
-- Kubernetes
-- Docker
-- Terraform
-
-### Database & Monitoring
-- MySQL
-- PostgreSQL
-- Grafana
-- Prometheus
-
-### DevOps & CI/CD
-- Jenkins
-- GitHub Actions
-- AWS CodePipeline
-- ArgoCD
-
-### Security & Compliance
-- HIPAA Compliance
-- SOC2
-- OAuth2
-- Keycloak
-
----
-
-## Professional Experience
+## Experience
 
 ### Senior Software Engineer — Red Hat
-**January 2026 – Present**
 
-- Working on Krkn, an open-source chaos engineering tool for testing infrastructure resilience
-- Maintaining the product and building new features; improving onboarding and documentation for new users based on feedback
-- Presented Krkn at DevConf Pune 2026, gathered feedback from IT professionals, and contributing to roadmap and feature implementation
-- Representing the product at meetups and conferences to raise awareness and attract contributors
+**January 2026 — Present · Performance & Scale · Pune, India**
+
+- Maintain Krkn, a CNCF open-source chaos engineering framework for Kubernetes and OpenShift.
+- Contribute to roadmap, architecture, features, releases, reviews, documentation, and community growth.
+- Own resilience validation for cross-cluster live migration in OpenShift Virtualization.
+- Designed Storage I/O throttling chaos across cgroup v1 and v2 environments.
+- Modernized validation with isolated pytest suites and introduced event-driven scenario triggers.
+- Parallelized PromQL work and removed duplicate SLO evaluation.
+- Mentor an LFX contributor building automated documentation tooling.
+- Presented Krkn at DevConf Pune 2026.
+- DevConf post: https://www.linkedin.com/feed/update/urn:li:activity:7429484896038887424/
 
 ### Senior Lead Software Engineer — HeapTrace Technology
-**October 2018 – December 2025 · 7 yrs 3 mos**
 
-- Mentored and guided 4+ junior developers across Spring Boot, CI/CD pipelines, and clean code practices
-- Architected multi-tenant backend services in Spring Boot with role-based access controls
-- Built high-performance ingestion APIs using Falcon framework, handling 10K+ events/min
-- Optimized API performance using pagination, Redis caching, and efficient query handling
-- Integrated Spring Security with Keycloak for OAuth2-based authentication
-- Architected HIPAA-compliant Engage app using Amazon Lexbot, Lambda, and Twilio API
-- Designed AWS SQS pipeline for real-time, fault-tolerant patient vitals ingestion
-- Developed Spring-based log API with PHI-masking logic, reducing debugging time by 50%
-- Led multi-layered testing strategy, increasing test coverage to 85% and reducing bugs by 90%
-- Migrated jobs to Lambda, reducing costs by 75% and improving speed by 5x
-- Saved $40,000 annually by shifting EC2 workloads to Reserved Instances
-- Implemented Blue-Green deployments for 15+ ECS microservices
-- Led AWS Partner Network accreditation
+**October 2018 — December 2025 · 7 years, 3 months**
+
+- Architected multi-tenant Spring Boot services and high-throughput Falcon APIs.
+- Designed AWS SQS pipelines for real-time patient-vitals ingestion.
+- Built HIPAA-aware systems with PHI masking, OAuth2, and Keycloak.
+- Reduced infrastructure cost and improved deployment safety across AWS and ECS.
+- Led testing strategy, code reviews, technical onboarding, and mentorship.
 
 ### Associate Software Developer — Bentley Systems
-**April 2018 – August 2018**
 
-- Developed "Forgot Username" module using C#, MVC-5, and KendoUI
-- Implemented role-based access control for fine-grained user permissions
+**April 2018 — August 2018**
 
----
+- Built account-recovery and role-based access features using C#, MVC 5, and Kendo UI.
 
-## Featured Projects
+## Selected Projects
 
-### AWS CodePipeline CLI
-Managing multiple pipelines across AWS profiles is tedious. This Bash script simplifies discovery and execution in one command, with profile support and GitHub-based self-update.
+### Krkn
 
-**Tech:** Bash, AWS CLI, GitHub
-**Link:** https://github.com/ddjain/aws-pipeline-cli
+Chaos engineering framework for validating Kubernetes and OpenShift infrastructure resilience.
+
+https://github.com/krkn-chaos/krkn
 
 ### Kubernetes MCP Server
-MCP server that lets AI agents inspect and manage Kubernetes clusters via natural language—useful when you want to troubleshoot or run kubectl-style tasks from a chat interface.
 
-**Tech:** Python, Kubernetes, MCP, AI
-**Link:** https://github.com/ddjain/kubernetics-mcp-server
+Natural-language cluster inspection and management through MCP-compatible AI agents.
 
-### RAG Application with Qdrant
-RAG app using the Qdrant vector database so you can ask questions over your own documents instead of searching manually. Good for internal docs or knowledge bases.
+https://github.com/ddjain/kubernetics-mcp-server
 
-**Tech:** Python, Qdrant, RAG, AI
-**Link:** https://github.com/ddjain/rag-application
+### AWS CodePipeline CLI
+
+Multi-profile pipeline discovery and execution from the command line.
+
+https://github.com/ddjain/aws-pipeline-cli
 
 ### ngDebounceClick
-Angular directive for debouncing click events to improve browser performance by reducing expensive function invocations.
 
-**Tech:** Angular, TypeScript, NPM
-**Link:** https://www.npmjs.com/package/ngdebounceclick
+AngularJS directive for controlling rapid click events and avoiding repeated expensive browser work.
 
----
+https://www.npmjs.com/package/ngdebounceclick
 
-## Writing
+## Core Capabilities
 
-*Posts will appear here. Add entries in `blog-posts.js`.*
-
-*(Example post template exists at `writing/example-post.html`)*
-
----
+- Resilience engineering: chaos scenarios, SLO validation, failure analysis, recovery guidance
+- Backend architecture: Java, Spring Boot, Python, REST APIs, Redis, messaging, distributed systems
+- Platform delivery: Kubernetes, OpenShift, AWS, Docker, Terraform, Argo CD, CI/CD
+- Observability: Prometheus, Grafana, Loki
+- Security and compliance: OAuth2, Keycloak, HIPAA, SOC 2, PHI controls
+- Leadership: roadmaps, architecture reviews, mentorship, documentation, open-source stewardship
 
 ## Contact
 
-| Channel | Details |
-|---------|---------|
-| Email | nnd.darshan@gmail.com |
-| Phone | +91 83293 97971 |
-| Location | Pune, India (Open to Relocation) |
-
-### Education
-- PG-DAC from CDAC IACSD Akurdi, Pune
-- B.E. Computer Science from MGM College
-
-### Social Links
-- **LinkedIn:** https://www.linkedin.com/in/ddjain
-- **GitHub:** https://github.com/ddjain
-- **Twitter:** https://x.com/i_darshanjain/
-
----
-
-## Footer
-
-© 2026 Darshan Jain. All rights reserved.
+- Email: nnd.darshan@gmail.com
+- LinkedIn: https://www.linkedin.com/in/ddjain
+- GitHub: https://github.com/ddjain
+- X: https://x.com/i_darshanjain/

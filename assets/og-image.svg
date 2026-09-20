@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f3f0e8"/>
+  <path d="M0 80h1200M0 550h1200M80 0v630M1120 0v630" stroke="#bdb7aa" stroke-width="2"/>
+  <rect x="80" y="80" width="1040" height="470" fill="none" stroke="#171714" stroke-width="2"/>
+  <rect x="1010" y="80" width="110" height="110" fill="#c43d25"/>
+  <text x="130" y="145" fill="#c43d25" font-family="monospace" font-size="22" letter-spacing="2">SENIOR SOFTWARE ENGINEER · RED HAT</text>
+  <text x="125" y="290" fill="#171714" font-family="Georgia, serif" font-size="92" font-weight="600">Darshan Jain</text>
+  <text x="130" y="375" fill="#4f4e47" font-family="Arial, sans-serif" font-size="34">Resilient infrastructure · Backend systems · Open source</text>
+  <text x="130" y="490" fill="#171714" font-family="monospace" font-size="22">darshanjain.is-a.dev</text>
+</svg>
