@@ -2,6 +2,7 @@
 
 const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+
 /* ------------------------------------------------------------------
    Nav / mobile menu
    ------------------------------------------------------------------ */
@@ -164,13 +165,18 @@ function bootLines() {
                 p.appendChild(tail);
             }
             li++;
-            setTimeout(writeLine, line.pause || 360);
+            setTimeout(writeLine, prefersReduced ? 0 : (line.pause || 360));
         });
     }
 
     function typeInto(el, text, caret, done) {
         const tn = document.createTextNode('');
         el.insertBefore(tn, caret);
+        if (prefersReduced) {
+            tn.data = text;
+            done();
+            return;
+        }
         let i = 0;
         const iv = setInterval(() => {
             i++;
@@ -179,7 +185,7 @@ function bootLines() {
                 clearInterval(iv);
                 done();
             }
-        }, prefersReduced ? 0 : 13 + Math.random() * 24);
+        }, 6 + Math.random() * 8);
     }
     bootLog.innerHTML = '';
     writeLine();
